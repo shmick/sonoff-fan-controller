@@ -16,7 +16,7 @@ The Sonoff SV is flashed with [Tasmota](https://tasmota.github.io/docs/) to allo
 | `module 3` | set the module type to a Sonoff SV |
 | `gpio14 4` | set gpio14 to DS18B20 sensor |
 | `SetOption74 1` | use internal pullup for single DS18B20 sensor |
-| `mem1 100`| relay on on at 100C |
+| `mem1 100`| relay on at 100C |
 | `mem2 95` | relay off at 95C |
 | `Rule1 ON DS18B20#Temperature>%mem1% DO Power on ENDON ON DS18B20#Temperature<%mem2% DO Power off ENDON` | Rule to set power on/off |
 | `Rule1 5` | Set rule1 to be one-shot detection |
@@ -26,6 +26,8 @@ Configure everything at once
 ```
 backlog hostname fancontrol ; friendlyname fancontrol ; devicename fancontrol ; module 3 ; gpio14 4 ; SetOption3 0 ; SetOption74 1 ; mem1 100 ; mem2 95 ; Rule1 ON DS18B20#Temperature>%mem1% DO Power on ENDON ON DS18B20#Temperature<%mem2% DO Power off ENDON ; rule1 5 ; rule1 1
 ```
+
+Changing the on/off temperatures is done by changing the `mem1` and `mem2` variables
 
 # Wiring
 | 6 pin connector | Description |
