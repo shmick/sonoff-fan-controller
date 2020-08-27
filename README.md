@@ -1,5 +1,5 @@
 # sonoff-fan-controller
-Sonoff SV running Tasmota with a DS1820B temp sensor to control a radiator fan
+Sonoff SV running Tasmota with a DS18B20 temp sensor to control a radiator fan
 
 # Parts
 Sonoff SV Board
@@ -16,10 +16,10 @@ The Sonoff SV is flashed with [Tasmota](https://tasmota.github.io/docs/) to allo
 | `hostname fancontrol` | set hostname to fancontrol |
 | `FriendlyName fancontrol` | set hostname to fancontrol |
 | `DeviceName fancontrol` | set hostname to fancontrol |
-| `module 3` | set the module type to a Sonoff SV |
-| `gpio14 4` | set gpio14 to DS18x20 sensor |
 | `SetOption3 0` | disable mqtt cuts down on error messages |
-| `SetOption74 1` | use internal pullup for single  sensor |
+| `module 3` | set the module type to a Sonoff SV |
+| `gpio14 4` | set gpio14 to DS18B20 sensor |
+| `SetOption74 1` | use internal pullup for single DS18B20 sensor |
 | `mem1 100`| relay on on at 100C |
 | `mem2 95` | relay off at 95C |
 | `Rule1 ON DS18B20#Temperature>%mem1% DO Power on ENDON ON DS18B20#Temperature<%mem2% DO Power off ENDON` | Rule to set power on/off |
