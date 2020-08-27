@@ -32,9 +32,9 @@ backlog hostname fancontrol ; friendlyname fancontrol ; devicename fancontrol ; 
 | --- | --- |
 |Battery + | Sonoff power + |
 |Battery - | Sonoff power - |
-|DS18B20 Vcc | GPIO14 V pin |
-|DS18B20 Gnd | GPIO14 G pin |
-|DS18B20 Data | GPIO14 S pin |
+|DS18B20 Vcc | Sonoff GPIO14 V pin |
+|DS18B20 Gnd | Sonoff GPIO14 G pin |
+|DS18B20 Data | Sonoff GPIO14 S pin |
 |Sonoff SV Output + | Radiator Fan Relay + |
 
 # Operation
