@@ -2,9 +2,9 @@
 Sonoff SV running Tasmota with a DS18B20 temp sensor to control a radiator fan
 
 # Parts
-Sonoff SV Board
-DS1820B Sensor - Waterproof type with stainless steel end.
-6 Pin waterproof / watertight locking connector
+* Sonoff SV Board
+* DS1820B Sensor - Waterproof type with stainless steel end.
+* 6 Pin waterproof / watertight locking connector
 
 # Software
 The Sonoff SV is flashed with [Tasmota](https://tasmota.github.io/docs/) to allow reading the DS1820B and controlling the relay
