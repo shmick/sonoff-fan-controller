@@ -27,5 +27,15 @@ Configure everything at once
 backlog hostname fancontrol ; friendlyname fancontrol ; devicename fancontrol ; module 3 ; gpio14 4 ; SetOption3 0 ; SetOption74 1 ; mem1 100 ; mem2 95 ; Rule1 ON DS18B20#Temperature>%mem1% DO Power on ENDON ON DS18B20#Temperature<%mem2% DO Power off ENDON ; rule1 5 ; rule1 1
 ```
 
+# Wiring
+| 6 pin connector | Description |
+| --- | --- |
+|Battery + | Sonoff power + |
+|Battery - | Sonoff power - |
+|DS18B20 Vcc | GPIO14 V pin |
+|DS18B20 Gnd | GPIO14 G pin |
+|DS18B20 Data | GPIO14 S pin |
+|Sonoff SV Output + | Radiator Fan Relay + |
+
 # Operation
 The Sonoff SV is powered from the motorcycle battery. When the relay is activated, the +12v signal is passed through to the Sonoff Relay + output, driving the relay for the radiator fan.
